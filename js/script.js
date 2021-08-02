@@ -31,3 +31,13 @@ function showQuestion() {
     }
 }
 
+function optionClickEvent(e) {
+    let clickedOption = parseInt(e.target.getAttribute('data-op'));
+
+    if (questions[currentQuestion].answer === clickedOption) {
+        correctAnswer++;
+    } 
+
+    currentQuestion++;
+    showQuestion();    
+}
