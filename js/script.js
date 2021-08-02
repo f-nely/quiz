@@ -4,6 +4,9 @@ let correctAnswer = 0;
 
 showQuestion();
 
+// Events
+document.querySelector('.scoreArea button').addEventListener('click', resetEvent);
+
 // functions
 function showQuestion() {
     if (questions[currentQuestion]) {
